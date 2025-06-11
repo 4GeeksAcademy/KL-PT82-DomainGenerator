@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-
-    <!-- Fontawesome is our recommended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-
-    <!-- Add Roboto Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <h1 id="domain">Loading Domain</h1>
-      <h1 id="allDomains">Loading Domain</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
-
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+  <style>
+    body {
+      background-color: rgb(47, 47, 47);
+      color: #d3d3d3; /* Light gray text */
+      font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+      font-size: 9px;
+      margin: 0;
+      padding: 0;
+    }
+    h1, p, a {
+      color: #d3d3d3; /* Light gray for headers, paragraphs, and links */
+    }
+    .alert-warning {
+      background-color: #333;
+      border-color: #555;
+      color: yellow;
+    }
+    a {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid text-center">
+    <h1 class="mt-5">Hello Rigo!</h1>
+    <h1 id="domain">Loading Domain</h1>
+    <h1 id="allDomains">Loading Domain</h1>
+    <img src="./assets/img/rigo-baby.jpg" />
+    <p class="alert alert-warning mt-4">If this text is <b>not</b> centered and <b>yellow</b>, you probably have an error</p>
+    <div class="fixed-bottom p-4">Made with ❤️ by <a href="https://www.4geeksacademy.com">4Geeks Academy</a></div>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
 </html>
