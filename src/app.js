@@ -17,18 +17,18 @@ window.onload = function () {
   document.querySelector("#domain").innerText = result;
 
   function getAllDomains() {
-    let AllDomains = [];
+    let allDomains = [];
     for (let i = 0; i < pronoun.length; i++) {
       for (let j = 0; j < adj.length; j++) {
         for (let k = 0; k < noun.length; k++) {
           for (let l = 0; l < extensions.length; l++) {
-            let domain = `${pronoun[i]}${adj[j]}${noun[k]}${extensions[l]}`;
-            AllDomains.push(domain);
+            let individualDomain = `${pronoun[i]}${adj[j]}${noun[k]}${extensions[l]}`;
+            allDomains.push(individualDomain);
           }
         }
       }
     }
-    return AllDomains;
+    return allDomains;
   }
 
   let domainsResults = getAllDomains();
